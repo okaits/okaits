@@ -16,9 +16,9 @@ PC, ボカロ, プロセカ
 <h3>GPG</h3>
 <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/EF5B5E124C4C6D496A0303263FFEBE51606EC94C">okaits7534@gmail.com(EF5B5E124C4C6D496A0303263FFEBE51606EC94C)</a> キーサーバー: <a href="http://keys.openpgp.org">hkp://keys.openpgp.org</a>
 <h3>Linuxcodevserver 認証局公開鍵</h3>
-<a href="https://raw.githubusercontent.com/okaits/okaits/0x522C698D.asc">0x522C698D</a>
+<a href="https://raw.githubusercontent.com/okaits/okaits/main/0x522C698D.asc">0x522C698D</a>
 <h3>S/MIME 公開鍵</h3>
-<a href="https://raw.githubusercontent.com/okaits/okaits/0x145734CF.asc">0x145734CF</a>
+<a href="https://raw.githubusercontent.com/okaits/okaits/main/0x145734CF.asc">0x145734CF</a>
 <br><br><br>
 <img src="https://github-readme-stats.vercel.app/api?username=okaits&show_icons=true"><br>
 <img src="https://raw.githubusercontent.com/okaits/okaits/main/profile-3d-contrib/profile-season-animate.svg"><br>
