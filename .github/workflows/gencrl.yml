@@ -32,7 +32,6 @@ jobs:
           git config user.name "Github Actions"
           git config user.email "github-actions@github.com"
           cd ${GITHUB_WORKSPACE}
-          git switch gh-page
 
       - name: Save secret key to working folder
         shell: bash
