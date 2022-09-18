@@ -45,11 +45,6 @@ jobs:
           echo "${{ secrets.cA_LCS_SMIME_PRIVKEY }}" | sed -s "s/ /\n/g" >> SMIME/privkey.pem
           echo "-----END RSA PRIVATE KEY-----" >> SMIME/privkey.pem
 
-      - name: Import personal private key
-        shell: bash
-        run: |
-          gpgsm --import ${GITHUB_WORKSPACE}/.github/workflows/gencrl/personal_privkey.pem
-
       - name: Generate Root CRL
         shell: bash
         run: |
