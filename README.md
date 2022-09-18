@@ -29,9 +29,9 @@ PC, ボカロ, プロセカ, ニコ動
 ##### LinuxcodevserverのRoot CA証明書
 [0x9CE61194](https://raw.githubusercontent.com/okaits/okaits/main/lcs-root.pem)
 ##### Linuxcodevserver - S/MIME Protection Certificatesの証明書
-[0x8BA52A8D](https://raw.githubusercontent.com/okaits/okaits/main/lcs-smime.pem)
+[0xCC9C23D8](https://raw.githubusercontent.com/okaits/okaits/main/lcs-smime.pem)
 ##### okaits#7534のLinuxcodevserver管理者としてのS/MIME証明書
-[0xCC9C23D8](https://raw.githubusercontent.com/okaits/okaits/main/lcs-personal.pem)
+[0xFA113D1C](https://raw.githubusercontent.com/okaits/okaits/main/lcs-personal.pem)
 #### その他
 ##### okaits#7534個人のS/MIME証明書
 [0x145734CF](https://raw.githubusercontent.com/okaits/okaits/main/personal-smime.pem)
