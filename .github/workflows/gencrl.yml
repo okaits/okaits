@@ -37,7 +37,7 @@ jobs:
       - name: Save secret key to working folder
         shell: bash
         run: |
-          cd "${GITHUB_WORKSPACE}"/.github/workflows/gencrl
+          cd "${GITHUB_WORKSPACE}"/gencrl
           echo "Now saving secret key to working folder..."
           echo "-----BEGIN RSA PRIVATE KEY-----" > Root/privkey.pem
           echo "${{ secrets.CA_LCS_ROOT_PRIVKEY }}" | sed -s "s/ /\n/g" >> Root/privkey.pem
@@ -50,7 +50,7 @@ jobs:
         shell: bash
         run: |
           rm ${GITHUB_WORKSPACE}/crl/linuxcodevserver.crl
-          cd ${GITHUB_WORKSPACE}/.github/workflows/gencrl/Root
+          cd ${GITHUB_WORKSPACE}/gencrl/Root
           openssl ca -gencrl -config ../openssl-config.cfg -out ../../../../crl/linuxcodevserver.crl --passin pass:"${{ secrets.SECRETS_KEYS_PASSWD }}"
           rm privkey.pem
 
@@ -58,7 +58,7 @@ jobs:
         shell: bash
         run: |
           rm ${GITHUB_WORKSPACE}/crl/linuxcodevserver-smime.crl
-          cd ${GITHUB_WORKSPACE}/.github/workflows/gencrl/SMIME
+          cd ${GITHUB_WORKSPACE}/gencrl/SMIME
           openssl ca -gencrl -config ../openssl-config.cfg -out ../../../../crl/linuxcodevserver-smime.crl --passin pass:"${{ secrets.SECRETS_KEYS_PASSWD }}"
           rm privkey.pem
 
