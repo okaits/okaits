@@ -67,3 +67,4 @@ jobs:
           cd ${GITHUB_WORKSPACE}
           git add .
           git commit -m "[update] Update cRL files (by Github Actions Bot)"
+          git push
