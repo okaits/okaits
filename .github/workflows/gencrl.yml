@@ -51,6 +51,7 @@ jobs:
           rm ${GITHUB_WORKSPACE}/crl/linuxcodevserver.crl
           cd ${GITHUB_WORKSPACE}/.github/workflows/gencrl/Root
           openssl ca -gencrl -config ../openssl-config.cfg -out ../../../../crl/linuxcodevserver.crl --passin pass:"${{ secrets.SECRETS_KEYS_PASSWD }}"
+          rm privkey.pem
 
       - name: Generate S/MIME CRL
         shell: bash
@@ -58,6 +59,7 @@ jobs:
           rm ${GITHUB_WORKSPACE}/crl/linuxcodevserver-smime.crl
           cd ${GITHUB_WORKSPACE}/.github/workflows/gencrl/SMIME
           openssl ca -gencrl -config ../openssl-config.cfg -out ../../../../crl/linuxcodevserver-smime.crl --passin pass:"${{ secrets.SECRETS_KEYS_PASSWD }}"
+          rm privkey.pem
 
       - name: Commit and Push
         shell: bash
